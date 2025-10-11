@@ -1,19 +1,19 @@
-Full-Stack Book Store MERN App
+##Full-Stack Book Store MERN App
 
 A full-stack web application for managing a bookstore with features like user authentication, admin dashboard, cart & checkout, and category-based filtering.
 
-Tech Stack
+##Tech Stack
 
-Frontend: React, Vite, Firebase Auth
+#Frontend: React, Vite, Firebase Auth
 
-Backend: Node.js, Express.js
+#Backend: Node.js, Express.js
 
-Database: MongoDB (Mongoose)
+#Database: MongoDB (Mongoose)
 
-Authentication: JWT + Firebase
+#Authentication: JWT + Firebase
 
-How to Run This Project
-Frontend
+##How to Run This Project
+#Frontend
 
 Clone or unzip the project folder.
 
@@ -32,7 +32,7 @@ VITE_MESSAGING_SENDER_ID="205632822247"
 VITE_APP_ID="1:205632822247:web:b0db0ec66bf6de0bbb3b42"
 
 
-Install dependencies:
+##Install dependencies:
 
 npm install
 
@@ -48,12 +48,12 @@ Navigate to the backend directory:
 cd backend
 
 
-Install dependencies:
+##Install dependencies:
 
 npm install
 
 
-Create a .env file in the backend root directory (same level as package.json) and add the following environment variables:
+#Create a .env file in the backend root directory (same level as package.json) and add the following environment variables:
 
 DB_URL="mongodb+srv://<username>:<password>@cluster0.mongodb.net/book-store?retryWrites=true&w=majority"
 JWT_SECRET_KEY="your-secret-key"
@@ -61,7 +61,7 @@ JWT_SECRET_KEY="your-secret-key"
 
 Note: Make sure MongoDB is set up and replace <username>, <password>, and the JWT secret key accordingly.
 
-Run the backend in development mode:
+##Run the backend in development mode:
 
 npm run start:dev
 
