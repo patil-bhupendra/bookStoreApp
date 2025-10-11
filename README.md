@@ -1,43 +1,74 @@
-# build-full-stack-book-store-mern-app
-![full-stack-book-store-mern-project](/frontend/src/assets/github-cover.png)
+Full-Stack Book Store MERN App
 
-## How to run this project:
+A full-stack web application for managing a bookstore with features like user authentication, admin dashboard, cart & checkout, and category-based filtering.
 
-### For Frontend 
-Follow the below steps to run the project: 
-- Firstly clone or unzip the project folder.
-* Go to the frontend directory by using the following command ``` cd frontend ```.
-* * create a **.env.local** file in the backend root directory as the same level where the **package.json** is located and keep the following environment variables there:
-    
->>> Stepup firebase app and configure the environment
+Tech Stack
+
+Frontend: React, Vite, Firebase Auth
+
+Backend: Node.js, Express.js
+
+Database: MongoDB (Mongoose)
+
+Authentication: JWT + Firebase
+
+How to Run This Project
+Frontend
+
+Clone or unzip the project folder.
+
+Navigate to the frontend directory:
+
+cd frontend
+
+
+Create a .env.local file in the frontend root directory (same level as package.json) and add the following Firebase environment variables:
 
 VITE_API_KEY="AIzaSyCXvDIC4MPrkaMdeg_O2iij88wLpfj3qBA"
-VITE_Auth_Domain="book-store-mern-app.firebaseapp.com"
+VITE_AUTH_DOMAIN="book-store-mern-app.firebaseapp.com"
 VITE_PROJECT_ID="book-store-mern-app"
 VITE_STORAGE_BUCKET="book-store-mern-app.appspot.com"
-VITE_MESSAGING_SENDERID= "205632822247"
-VITE_APPID="1:205632822247:web:b0db0ec66bf6de0bbb3b42"
-+ Then run `` npm install `` commend to install node dependencies.
-- Finally, to run the project, use ``npm run dev`` command.
+VITE_MESSAGING_SENDER_ID="205632822247"
+VITE_APP_ID="1:205632822247:web:b0db0ec66bf6de0bbb3b42"
 
 
-### For Backend
-Follow the below steps to run the project: 
-- Firstly clone or unzip the project folder.
-* Go to the backend directory by using the following command ``` cd backend```.
-+ Then run `` npm install `` commend to install node dependencies.
-* create a **.env** file in the backend root directory as the same level where the **package.json** is located and keep the following environment variables there: 
-```
+Install dependencies:
+
+npm install
+
+
+Run the frontend:
+
+npm run dev
+
+Backend
+
+Navigate to the backend directory:
+
+cd backend
+
+
+Install dependencies:
+
+npm install
+
+
+Create a .env file in the backend root directory (same level as package.json) and add the following environment variables:
+
 DB_URL="mongodb+srv://<username>:<password>@cluster0.mongodb.net/book-store?retryWrites=true&w=majority"
 JWT_SECRET_KEY="your-secret-key"
 
-Note: Please setup mongodb and change the MongoDB url and set your jwt secret key above.
 
-- Finally, to run the project, use ``npm run start:dev`` command.
+Note: Make sure MongoDB is set up and replace <username>, <password>, and the JWT secret key accordingly.
 
-# Tech Stack
+Run the backend in development mode:
 
-Frontend: React + Vite + Firebase Auth
-Backend: Node.js + Express.js
-Database: MongoDB (Mongoose)
-Authentication: JWT + Firebase
+npm run start:dev
+
+Additional Notes
+
+Ensure both frontend and backend are running concurrently for full functionality.
+
+Firebase configuration is required for authentication features.
+
+MongoDB Atlas is recommended for the database setup.
