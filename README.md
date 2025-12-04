@@ -44,5 +44,5 @@ npm run start:dev
 ##Additional Notes
 Ensure both frontend and backend are running concurrently.
 Firebase configuration is required for authentication.
-MongoDB Atlas is recommended for the database setup.
+
 
