@@ -68,13 +68,6 @@ JWT + Firebase Authentication
 
 ---
 
-## 📸 Screenshots
-
-<!-- Replace with actual images -->
-![Home](./frontend/src/assets/banner.png)
-![Books](./frontend/src/assets/books/book-1.png)
-![Dashboard](./frontend/src/assets/github-cover.png)
-
 ---
 
 ## 🔑 Demo Credentials
