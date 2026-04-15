@@ -130,9 +130,100 @@ JWT_SECRET_KEY=your_secret
 ### 📁 Project Structure
 ```
 bookStoreApp/
-│── frontend/        # React frontend
-│── backend/         # Express backend (MVC)
-│── README.md
+│
+├── backend/
+│   ├── src/
+│   │   ├── config/              # DB & app configs
+│   │   │   └── db.js
+│   │   │
+│   │   ├── modules/             # Feature-based structure (BEST PRACTICE)
+│   │   │   ├── books/
+│   │   │   │   ├── book.controller.js
+│   │   │   │   ├── book.model.js
+│   │   │   │   ├── book.route.js
+│   │   │   │   └── book.service.js   # (NEW - business logic)
+│   │   │   │
+│   │   │   ├── orders/
+│   │   │   │   ├── order.controller.js
+│   │   │   │   ├── order.model.js
+│   │   │   │   ├── order.route.js
+│   │   │   │   └── order.service.js
+│   │   │   │
+│   │   │   ├── users/
+│   │   │   │   ├── user.model.js
+│   │   │   │   ├── user.route.js
+│   │   │   │   └── user.service.js
+│   │   │
+│   │   ├── middleware/
+│   │   │   ├── auth.middleware.js        # JWT verify
+│   │   │   └── admin.middleware.js       # Admin check
+│   │   │
+│   │   ├── utils/
+│   │   │   └── errorHandler.js
+│   │   │
+│   │   ├── app.js              # Express app setup
+│   │   └── server.js           # Server start
+│   │
+│   ├── .env
+│   ├── .gitignore
+│   ├── package.json
+│   └── vercel.json
+│
+├── frontend/
+│   ├── src/
+│   │   ├── app/                # Redux store
+│   │   │   └── store.js
+│   │   │
+│   │   ├── features/           # Feature-based redux
+│   │   │   ├── books/
+│   │   │   │   └── booksApi.js
+│   │   │   ├── cart/
+│   │   │   │   └── cartSlice.js
+│   │   │   └── orders/
+│   │   │       └── ordersApi.js
+│   │   │
+│   │   ├── components/         # Reusable components
+│   │   │   ├── common/
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   └── Loading.jsx
+│   │   │   │
+│   │   │   └── auth/
+│   │   │       ├── Login.jsx
+│   │   │       └── Register.jsx
+│   │   │
+│   │   ├── pages/              # Page-level components
+│   │   │   ├── home/
+│   │   │   ├── books/
+│   │   │   ├── cart/
+│   │   │   ├── orders/
+│   │   │   └── dashboard/
+│   │   │
+│   │   ├── routes/
+│   │   │   ├── PrivateRoute.jsx
+│   │   │   ├── AdminRoute.jsx
+│   │   │   └── AppRouter.jsx
+│   │   │
+│   │   ├── context/
+│   │   │   └── AuthContext.jsx
+│   │   │
+│   │   ├── services/           # API base config
+│   │   │   └── baseURL.js
+│   │   │
+│   │   ├── utils/
+│   │   │   └── helpers.js
+│   │   │
+│   │   ├── assets/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   │
+│   ├── .env
+│   ├── package.json
+│   └── vite.config.js
+│
+├── .gitignore
+├── README.md
+└── package.json (optional root config)
 ```
 ### 🚀 Future Improvements
 - 💳 Payment integration (Stripe / Razorpay)
