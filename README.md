@@ -66,10 +66,6 @@ JWT + Firebase Authentication
 ### 👤 Users
 - `POST /api/auth` → Login/Register user  
 
----
-
----
-
 ## 🔑 Demo Credentials
 
 **User Login:**  
@@ -126,15 +122,15 @@ bookStoreApp/
 │
 ├── backend/
 │   ├── src/
-│   │   ├── config/              # DB & app configs
+│   │   ├── config/      
 │   │   │   └── db.js
 │   │   │
-│   │   ├── modules/             # Feature-based structure (BEST PRACTICE)
+│   │   ├── modules/
 │   │   │   ├── books/
 │   │   │   │   ├── book.controller.js
 │   │   │   │   ├── book.model.js
 │   │   │   │   ├── book.route.js
-│   │   │   │   └── book.service.js   # (NEW - business logic)
+│   │   │   │   └── book.service.js  
 │   │   │   │
 │   │   │   ├── orders/
 │   │   │   │   ├── order.controller.js
@@ -148,14 +144,14 @@ bookStoreApp/
 │   │   │   │   └── user.service.js
 │   │   │
 │   │   ├── middleware/
-│   │   │   ├── auth.middleware.js        # JWT verify
-│   │   │   └── admin.middleware.js       # Admin check
+│   │   │   ├── auth.middleware.js        
+│   │   │   └── admin.middleware.js
 │   │   │
 │   │   ├── utils/
 │   │   │   └── errorHandler.js
 │   │   │
-│   │   ├── app.js              # Express app setup
-│   │   └── server.js           # Server start
+│   │   ├── app.js             
+│   │   └── server.js
 │   │
 │   ├── .env
 │   ├── .gitignore
@@ -164,10 +160,10 @@ bookStoreApp/
 │
 ├── frontend/
 │   ├── src/
-│   │   ├── app/                # Redux store
+│   │   ├── app/
 │   │   │   └── store.js
 │   │   │
-│   │   ├── features/           # Feature-based redux
+│   │   ├── features/
 │   │   │   ├── books/
 │   │   │   │   └── booksApi.js
 │   │   │   ├── cart/
@@ -175,7 +171,7 @@ bookStoreApp/
 │   │   │   └── orders/
 │   │   │       └── ordersApi.js
 │   │   │
-│   │   ├── components/         # Reusable components
+│   │   ├── components/         
 │   │   │   ├── common/
 │   │   │   │   ├── Navbar.jsx
 │   │   │   │   ├── Footer.jsx
@@ -185,7 +181,7 @@ bookStoreApp/
 │   │   │       ├── Login.jsx
 │   │   │       └── Register.jsx
 │   │   │
-│   │   ├── pages/              # Page-level components
+│   │   ├── pages/
 │   │   │   ├── home/
 │   │   │   ├── books/
 │   │   │   ├── cart/
@@ -200,7 +196,7 @@ bookStoreApp/
 │   │   ├── context/
 │   │   │   └── AuthContext.jsx
 │   │   │
-│   │   ├── services/           # API base config
+│   │   ├── services/
 │   │   │   └── baseURL.js
 │   │   │
 │   │   ├── utils/
