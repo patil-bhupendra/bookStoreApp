@@ -135,17 +135,17 @@ bookStoreApp/
 │── README.md
 ```
 ### 🚀 Future Improvements
-💳 Payment integration (Stripe / Razorpay)
-❤️ Wishlist functionality
-📦 Order tracking system
-⚡ Performance optimization & caching
+- 💳 Payment integration (Stripe / Razorpay)
+- ❤️ Wishlist functionality
+- 📦 Order tracking system
+- ⚡ Performance optimization & caching
 
-###🙌 Author
+### Author
 
 **Bhupendra Patil**
 📧 bhupendrarajput1232@gmail.com
 
-🔗 GitHub: https://github.com/patil-bhupendra
+- 🔗 GitHub: https://github.com/patil-bhupendra
 
 ### ⭐ Support
 
