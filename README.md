@@ -231,7 +231,7 @@ bookStoreApp/
 - 📦 Order tracking system
 - ⚡ Performance optimization & caching
 
-### Author
+### 👨‍💻 Author
 
 **Bhupendra Patil**
 📧 bhupendrarajput1232@gmail.com
