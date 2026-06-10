@@ -66,16 +66,6 @@ JWT + Firebase Authentication
 ### 👤 Users
 - `POST /api/auth` → Login/Register user  
 
-## 🔑 Demo Credentials
-
-**User Login:**  
-Email: testuser@gmail.com  
-Password: 123456  
-
-**Admin Login:**  
-Email: admin@gmail.com  
-Password: 123456  
-
 ---
 
 ## ⚙️ Setup Instructions
